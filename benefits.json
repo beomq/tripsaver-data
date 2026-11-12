@@ -1,0 +1,1312 @@
+{
+  "basis_date": "2026-11-12",
+  "needs_recheck": false,
+  "note": "2026-11-12 조사. 혜택별 needs_recheck와 note를 보세요. 2026-11-01부터 일본 면세는 리펀드 방식이라 매장에서는 세금 포함가를 내고 출국 후 환급받습니다(앱 계산의 ÷1.1 선적용은 결제 시점과 다름). 매장 쿠폰은 매장별 금액 구간제가 많아 coupon_rates를 사용자가 고르는 값으로만 넣었습니다(돈키호테 1만엔 5%·3만엔 7%, 마츠키요 1만 3%·3만 5%·5만 7%, 다이코쿠 5천 3%·3만 5%·5만 8%, 코쿠민 1만 5%·3만 8%, 백화점 5%). 카드사 전용 돈키호테·마츠키요 쿠폰(Visa, KB·롯데 유니온페이, 우리 마스터, JCB)은 일반 쿠폰과 같은 비율이고 함께 쓸 수 없어 offers에서 뺐습니다. 원화 기준 혜택, 상시 카드 기능(포인트·10% 할인), 교통·택시·공항 면세점처럼 stores에 없는 매장 혜택은 스키마에 맞지 않아 research/benefits-full.json에만 있습니다.",
+  "stores": [
+    {
+      "id": "bic",
+      "name": "빅카메라·코지마",
+      "type": "electronics",
+      "tax_free": true,
+      "coupon_rates": [
+        0.03,
+        0.05,
+        0.07
+      ],
+      "split_payment": true
+    },
+    {
+      "id": "edion",
+      "name": "에디온",
+      "type": "electronics",
+      "tax_free": true,
+      "coupon_rates": [],
+      "split_payment": true
+    },
+    {
+      "id": "yamada",
+      "name": "야마다전기",
+      "type": "electronics",
+      "tax_free": true,
+      "coupon_rates": [],
+      "split_payment": true
+    },
+    {
+      "id": "joshin",
+      "name": "조신",
+      "type": "electronics",
+      "tax_free": true,
+      "coupon_rates": [],
+      "split_payment": true
+    },
+    {
+      "id": "yodobashi",
+      "name": "요도바시카메라",
+      "type": "electronics",
+      "tax_free": true,
+      "coupon_rates": [],
+      "split_payment": true
+    },
+    {
+      "id": "donki",
+      "name": "돈키호테",
+      "type": "discount",
+      "tax_free": true,
+      "coupon_rates": [
+        0.05,
+        0.07
+      ],
+      "split_payment": true
+    },
+    {
+      "id": "matsukiyo",
+      "name": "마츠모토키요시",
+      "type": "drugstore",
+      "tax_free": true,
+      "coupon_rates": [
+        0.03,
+        0.05,
+        0.07
+      ],
+      "split_payment": true
+    },
+    {
+      "id": "cocokara",
+      "name": "코코카라파인",
+      "type": "drugstore",
+      "tax_free": true,
+      "coupon_rates": [],
+      "split_payment": true
+    },
+    {
+      "id": "sundrug",
+      "name": "선드럭",
+      "type": "drugstore",
+      "tax_free": true,
+      "coupon_rates": [],
+      "split_payment": true
+    },
+    {
+      "id": "tsuruha",
+      "name": "츠루하 드럭",
+      "type": "drugstore",
+      "tax_free": true,
+      "coupon_rates": [],
+      "split_payment": true
+    },
+    {
+      "id": "daikoku",
+      "name": "다이코쿠 드럭",
+      "type": "drugstore",
+      "tax_free": true,
+      "coupon_rates": [
+        0.03,
+        0.05,
+        0.08
+      ],
+      "split_payment": true
+    },
+    {
+      "id": "kokumin",
+      "name": "코쿠민 드럭",
+      "type": "drugstore",
+      "tax_free": true,
+      "coupon_rates": [
+        0.05,
+        0.08
+      ],
+      "split_payment": true
+    },
+    {
+      "id": "cosmos",
+      "name": "코스모스 드럭",
+      "type": "drugstore",
+      "tax_free": true,
+      "coupon_rates": [],
+      "split_payment": true
+    },
+    {
+      "id": "alpen",
+      "name": "알펜",
+      "type": "sports",
+      "tax_free": true,
+      "coupon_rates": [],
+      "split_payment": true
+    },
+    {
+      "id": "uniqlo",
+      "name": "유니클로",
+      "type": "clothes",
+      "tax_free": true,
+      "coupon_rates": [],
+      "split_payment": true
+    },
+    {
+      "id": "mitsukoshi-isetan",
+      "name": "미츠코시 이세탄",
+      "type": "luxury",
+      "tax_free": true,
+      "coupon_rates": [
+        0.05
+      ],
+      "split_payment": true
+    },
+    {
+      "id": "hankyu-hanshin",
+      "name": "한큐·한신 백화점",
+      "type": "luxury",
+      "tax_free": true,
+      "coupon_rates": [
+        0.05
+      ],
+      "split_payment": true
+    },
+    {
+      "id": "daimaru-matsuzakaya",
+      "name": "다이마루 마쓰자카야",
+      "type": "luxury",
+      "tax_free": true,
+      "coupon_rates": [
+        0.05
+      ],
+      "split_payment": true
+    },
+    {
+      "id": "takashimaya",
+      "name": "다카시마야",
+      "type": "luxury",
+      "tax_free": true,
+      "coupon_rates": [
+        0.05
+      ],
+      "split_payment": true
+    },
+    {
+      "id": "seibu-sogo",
+      "name": "세이부·소고",
+      "type": "luxury",
+      "tax_free": true,
+      "coupon_rates": [
+        0.05
+      ],
+      "split_payment": true
+    },
+    {
+      "id": "sushiro",
+      "name": "스시로",
+      "type": "cafe",
+      "tax_free": false,
+      "coupon_rates": [],
+      "split_payment": true
+    },
+    {
+      "id": "komeda",
+      "name": "코메다커피",
+      "type": "cafe",
+      "tax_free": false,
+      "coupon_rates": [],
+      "split_payment": true
+    },
+    {
+      "id": "food",
+      "name": "음식점·카페(그 외)",
+      "type": "cafe",
+      "tax_free": false,
+      "coupon_rates": [],
+      "split_payment": true
+    },
+    {
+      "id": "other",
+      "name": "명품·일반 판매점",
+      "type": "luxury",
+      "tax_free": true,
+      "coupon_rates": [],
+      "split_payment": false
+    }
+  ],
+  "cards": [
+    {
+      "id": "shinhan-haru",
+      "issuer": "신한",
+      "name": "신한 Haru",
+      "network": "jcb",
+      "fee_free": false,
+      "countable": false
+    },
+    {
+      "id": "shinhan-sol",
+      "issuer": "신한",
+      "name": "신한 SOL트래블 체크",
+      "network": "master",
+      "fee_free": true,
+      "countable": false
+    },
+    {
+      "id": "shinhan-tripj",
+      "issuer": "신한",
+      "name": "신한 SOL트립앤J 체크(JCB)",
+      "network": "jcb",
+      "fee_free": true,
+      "countable": false
+    },
+    {
+      "id": "hana-travlog",
+      "issuer": "하나",
+      "name": "하나 트래블로그 체크(유니온페이)",
+      "network": "unionpay",
+      "fee_free": true,
+      "countable": false
+    },
+    {
+      "id": "hana-travlog-master",
+      "issuer": "하나",
+      "name": "하나 트래블로그 체크(마스터)",
+      "network": "master",
+      "fee_free": true,
+      "countable": false
+    },
+    {
+      "id": "hana-travlog-plus",
+      "issuer": "하나",
+      "name": "하나 트래블로그+ 신용",
+      "network": "master",
+      "fee_free": false,
+      "countable": false
+    },
+    {
+      "id": "kb-travelers",
+      "issuer": "KB",
+      "name": "KB국민 트래블러스 체크",
+      "network": "master",
+      "fee_free": true,
+      "countable": false
+    },
+    {
+      "id": "kb-unionpay",
+      "issuer": "KB",
+      "name": "KB국민 유니온페이",
+      "network": "unionpay",
+      "fee_free": false,
+      "countable": true
+    },
+    {
+      "id": "kb-master",
+      "issuer": "KB",
+      "name": "KB국민 마스터",
+      "network": "master",
+      "fee_free": false,
+      "countable": true
+    },
+    {
+      "id": "kb-visa",
+      "issuer": "KB",
+      "name": "KB국민 Visa",
+      "network": "visa",
+      "fee_free": false,
+      "countable": true
+    },
+    {
+      "id": "lotte-unionpay",
+      "issuer": "롯데",
+      "name": "롯데 유니온페이",
+      "network": "unionpay",
+      "fee_free": false,
+      "countable": true
+    },
+    {
+      "id": "lotte-master",
+      "issuer": "롯데",
+      "name": "롯데 마스터",
+      "network": "master",
+      "fee_free": false,
+      "countable": true
+    },
+    {
+      "id": "woori-master",
+      "issuer": "우리",
+      "name": "우리 마스터",
+      "network": "master",
+      "fee_free": false,
+      "countable": true
+    },
+    {
+      "id": "woori-wibee",
+      "issuer": "우리",
+      "name": "우리 위비트래블 체크",
+      "network": "master",
+      "fee_free": false,
+      "countable": false
+    },
+    {
+      "id": "woori-wibee-j",
+      "issuer": "우리",
+      "name": "우리 위비트래블J 체크",
+      "network": "master",
+      "fee_free": false,
+      "countable": false
+    },
+    {
+      "id": "nh-zgm",
+      "issuer": "NH",
+      "name": "NH zgm.일본여행중",
+      "network": "jcb",
+      "fee_free": false,
+      "countable": false
+    },
+    {
+      "id": "nh-travelry",
+      "issuer": "NH",
+      "name": "NH 트래블리 체크",
+      "network": "master",
+      "fee_free": true,
+      "countable": false
+    },
+    {
+      "id": "samsung-visa",
+      "issuer": "삼성",
+      "name": "삼성 Visa",
+      "network": "visa",
+      "fee_free": false,
+      "countable": true
+    },
+    {
+      "id": "toss-check",
+      "issuer": "토스뱅크",
+      "name": "토스뱅크 체크(외화통장 연결)",
+      "network": "master",
+      "fee_free": true,
+      "countable": false
+    },
+    {
+      "id": "kakaobank-check",
+      "issuer": "카카오뱅크",
+      "name": "카카오뱅크 체크",
+      "network": "master",
+      "fee_free": false,
+      "countable": false
+    },
+    {
+      "id": "travelwallet",
+      "issuer": "트래블월렛",
+      "name": "트래블월렛 트래블페이",
+      "network": "visa",
+      "fee_free": true,
+      "countable": false
+    },
+    {
+      "id": "jcb-other",
+      "issuer": "그 외",
+      "name": "JCB 카드(그 외 카드사)",
+      "network": "jcb",
+      "fee_free": false,
+      "countable": true
+    },
+    {
+      "id": "master-other",
+      "issuer": "그 외",
+      "name": "마스터카드(그 외 카드사)",
+      "network": "master",
+      "fee_free": false,
+      "countable": true
+    },
+    {
+      "id": "visa-other",
+      "issuer": "그 외",
+      "name": "Visa 카드(그 외 카드사)",
+      "network": "visa",
+      "fee_free": false,
+      "countable": true
+    },
+    {
+      "id": "unionpay-other",
+      "issuer": "그 외",
+      "name": "유니온페이(그 외 카드사)",
+      "network": "unionpay",
+      "fee_free": false,
+      "countable": true
+    }
+  ],
+  "offers": [
+    {
+      "id": "jcb-jcbig-r3-donki",
+      "label": "JCB 돈키호테 20% 캐시백(3차)",
+      "country": "jp",
+      "kind": "cashback",
+      "network": "jcb",
+      "stores": [
+        "donki"
+      ],
+      "rate": 0.2,
+      "min_yen": 15000,
+      "cap_yen": 3000,
+      "uses": 1,
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "needs_recheck": false,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/2026JCBig/92971/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/2026JCBig/92971/",
+      "event_link_kind": "event",
+      "note": "최소 결제는 누적 기준(차수 누적 15,000엔) / 사전 등록·응모 필요 / 중복: 다른 행사와 별개. JCB 프리미엄 돈키호테 1,000엔과 같은 결제에 겹친다고 계산하지 말 것(공식 미명시) / 지급: 3차분 2027-01 말 원화 취소매출 / 가맹점별 사전 응모, 응모 당일 이용분부터. 실물카드 엔화 결제만. 코스메돈키 등 일부 매장 제외. / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-jcbig-r4-donki",
+      "label": "JCB 돈키호테 20% 캐시백(4차)",
+      "country": "jp",
+      "kind": "cashback",
+      "network": "jcb",
+      "stores": [
+        "donki"
+      ],
+      "rate": 0.2,
+      "min_yen": 15000,
+      "cap_yen": 3000,
+      "uses": 1,
+      "valid_from": "2027-01-01",
+      "valid_to": "2027-03-31",
+      "needs_recheck": true,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/2026JCBig/92971/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/2026JCBig/92971/",
+      "event_link_kind": "event",
+      "note": "사전 등록·응모 필요 / 중복: 다른 행사와 별개. JCB 프리미엄 돈키호테 1,000엔과 같은 결제에 겹친다고 계산하지 말 것(공식 미명시) / 지급: 2027-04 말 예정 / 4차 응모는 2026-12-31 09:00 오픈, 12-31 이용분은 제외. 공식: '각 차수별 이용 조건이 변경될 수 있습니다'. / 재확인 사유: 4차 조건 미공지, 4차 조건 미공지, 3차 조건으로 넣음 / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-jcbig-r3-hankyu",
+      "label": "JCB 한큐·한신 백화점 20% 캐시백(3차)",
+      "country": "jp",
+      "kind": "cashback",
+      "network": "jcb",
+      "stores": [
+        "hankyu-hanshin"
+      ],
+      "rate": 0.2,
+      "min_yen": 15000,
+      "cap_yen": 3000,
+      "uses": 1,
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "needs_recheck": false,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/2026JCBig/92971/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/2026JCBig/92971/",
+      "event_link_kind": "event",
+      "note": "최소 결제는 누적 기준(차수 누적 15,000엔) / 사전 등록·응모 필요 / 중복: 다른 행사와 별개. JCB 프리미엄 돈키호테 1,000엔과 같은 결제에 겹친다고 계산하지 말 것(공식 미명시) / 지급: 3차분 2027-01 말 원화 취소매출 / 일부 입점 브랜드(로프트·무인양품 등) 제외. / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-jcbig-r4-hankyu",
+      "label": "JCB 한큐·한신 백화점 20% 캐시백(4차)",
+      "country": "jp",
+      "kind": "cashback",
+      "network": "jcb",
+      "stores": [
+        "hankyu-hanshin"
+      ],
+      "rate": 0.2,
+      "min_yen": 15000,
+      "cap_yen": 3000,
+      "uses": 1,
+      "valid_from": "2027-01-01",
+      "valid_to": "2027-03-31",
+      "needs_recheck": true,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/2026JCBig/92971/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/2026JCBig/92971/",
+      "event_link_kind": "event",
+      "note": "사전 등록·응모 필요 / 중복: 다른 행사와 별개. JCB 프리미엄 돈키호테 1,000엔과 같은 결제에 겹친다고 계산하지 말 것(공식 미명시) / 지급: 2027-04 말 예정 / 4차 응모는 2026-12-31 09:00 오픈, 12-31 이용분은 제외. 공식: '각 차수별 이용 조건이 변경될 수 있습니다'. / 재확인 사유: 4차 조건 미공지, 4차 조건 미공지, 3차 조건으로 넣음 / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-jcbig-r3-sushiro",
+      "label": "JCB 스시로 20% 캐시백(3차)",
+      "country": "jp",
+      "kind": "cashback",
+      "network": "jcb",
+      "stores": [
+        "sushiro"
+      ],
+      "rate": 0.2,
+      "min_yen": 4000,
+      "cap_yen": 1000,
+      "uses": 1,
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "needs_recheck": false,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/2026JCBig/92971/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/2026JCBig/92971/",
+      "event_link_kind": "event",
+      "note": "최소 결제는 누적 기준(차수 누적 4,000엔) / 사전 등록·응모 필요 / 중복: 다른 행사와 별개. JCB 프리미엄 돈키호테 1,000엔과 같은 결제에 겹친다고 계산하지 말 것(공식 미명시) / 지급: 3차분 2027-01 말 원화 취소매출 / 음식점이라 면세 없음. 일부 매장 제외. / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-jcbig-r4-sushiro",
+      "label": "JCB 스시로 20% 캐시백(4차)",
+      "country": "jp",
+      "kind": "cashback",
+      "network": "jcb",
+      "stores": [
+        "sushiro"
+      ],
+      "rate": 0.2,
+      "min_yen": 4000,
+      "cap_yen": 1000,
+      "uses": 1,
+      "valid_from": "2027-01-01",
+      "valid_to": "2027-03-31",
+      "needs_recheck": true,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/2026JCBig/92971/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/2026JCBig/92971/",
+      "event_link_kind": "event",
+      "note": "사전 등록·응모 필요 / 중복: 다른 행사와 별개. JCB 프리미엄 돈키호테 1,000엔과 같은 결제에 겹친다고 계산하지 말 것(공식 미명시) / 지급: 2027-04 말 예정 / 4차 응모는 2026-12-31 09:00 오픈, 12-31 이용분은 제외. 공식: '각 차수별 이용 조건이 변경될 수 있습니다'. / 재확인 사유: 4차 조건 미공지, 4차 조건 미공지, 3차 조건으로 넣음 / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-jcbig-r3-komeda",
+      "label": "JCB 코메다커피 20% 캐시백(3차)",
+      "country": "jp",
+      "kind": "cashback",
+      "network": "jcb",
+      "stores": [
+        "komeda"
+      ],
+      "rate": 0.2,
+      "min_yen": 2000,
+      "cap_yen": 1000,
+      "uses": 1,
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "needs_recheck": false,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/2026JCBig/92971/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/2026JCBig/92971/",
+      "event_link_kind": "event",
+      "note": "최소 결제는 누적 기준(차수 누적 2,000엔) / 사전 등록·응모 필요 / 중복: 다른 행사와 별개. JCB 프리미엄 돈키호테 1,000엔과 같은 결제에 겹친다고 계산하지 말 것(공식 미명시) / 지급: 3차분 2027-01 말 원화 취소매출 / 이온몰 입점점 등 다수 제외. / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-jcbig-r4-komeda",
+      "label": "JCB 코메다커피 20% 캐시백(4차)",
+      "country": "jp",
+      "kind": "cashback",
+      "network": "jcb",
+      "stores": [
+        "komeda"
+      ],
+      "rate": 0.2,
+      "min_yen": 2000,
+      "cap_yen": 1000,
+      "uses": 1,
+      "valid_from": "2027-01-01",
+      "valid_to": "2027-03-31",
+      "needs_recheck": true,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/2026JCBig/92971/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/2026JCBig/92971/",
+      "event_link_kind": "event",
+      "note": "사전 등록·응모 필요 / 중복: 다른 행사와 별개. JCB 프리미엄 돈키호테 1,000엔과 같은 결제에 겹친다고 계산하지 말 것(공식 미명시) / 지급: 2027-04 말 예정 / 4차 응모는 2026-12-31 09:00 오픈, 12-31 이용분은 제외. 공식: '각 차수별 이용 조건이 변경될 수 있습니다'. / 재확인 사유: 4차 조건 미공지, 4차 조건 미공지, 3차 조건으로 넣음 / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-mitsukoshi-isetan-dec",
+      "label": "JCB 미츠코시 이세탄 20% 캐시백(12월)",
+      "country": "jp",
+      "kind": "cashback",
+      "network": "jcb",
+      "stores": [
+        "mitsukoshi-isetan"
+      ],
+      "rate": 0.2,
+      "min_yen": 50000,
+      "cap_yen": 10000,
+      "uses": 1,
+      "valid_from": "2026-12-01",
+      "valid_to": "2026-12-31",
+      "needs_recheck": false,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/mitsukoshiisetan/93856/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/mitsukoshiisetan/93856/",
+      "event_link_kind": "event",
+      "note": "최소 결제는 누적 기준(합계 50,000엔) / 사전 등록·응모 필요 / 중복: 캐시백은 세금·다른 할인 반영 후 최종 결제액 기준 / 지급: 2027-01 이후 원화 취소매출 / 등록 2026-11-02 10:00 ~ 12-31 23:59(JST), 등록일 이후 결제분. 엔화 결제만. / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-drug-cocokara-t1",
+      "label": "JCB 코코카라파인 쿠폰 3%",
+      "country": "jp",
+      "kind": "instant",
+      "network": "jcb",
+      "stores": [
+        "cocokara"
+      ],
+      "rate": 0.03,
+      "min_yen": 10000,
+      "valid_from": "2025-04-01",
+      "valid_to": "2027-03-31",
+      "needs_recheck": false,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_link_kind": "event",
+      "note": "중복: 다른 우대·서비스와 중복 불가. 전액 JCB 결제 필요 / 같은 쿠폰의 금액 구간(1만 3%·3만 5%·5만 7%) 중 하나만 적용 / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-drug-cocokara-t2",
+      "label": "JCB 코코카라파인 쿠폰 5%",
+      "country": "jp",
+      "kind": "instant",
+      "network": "jcb",
+      "stores": [
+        "cocokara"
+      ],
+      "rate": 0.05,
+      "min_yen": 30000,
+      "valid_from": "2025-04-01",
+      "valid_to": "2027-03-31",
+      "needs_recheck": false,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_link_kind": "event",
+      "note": "중복: 다른 우대·서비스와 중복 불가. 전액 JCB 결제 필요 / 같은 쿠폰의 금액 구간(1만 3%·3만 5%·5만 7%) 중 하나만 적용 / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-drug-cocokara-t3",
+      "label": "JCB 코코카라파인 쿠폰 7%",
+      "country": "jp",
+      "kind": "instant",
+      "network": "jcb",
+      "stores": [
+        "cocokara"
+      ],
+      "rate": 0.07,
+      "min_yen": 50000,
+      "valid_from": "2025-04-01",
+      "valid_to": "2027-03-31",
+      "needs_recheck": false,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_link_kind": "event",
+      "note": "중복: 다른 우대·서비스와 중복 불가. 전액 JCB 결제 필요 / 같은 쿠폰의 금액 구간(1만 3%·3만 5%·5만 7%) 중 하나만 적용 / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-drug-sundrug-t1",
+      "label": "JCB 선드럭 쿠폰 3%",
+      "country": "jp",
+      "kind": "instant",
+      "network": "jcb",
+      "stores": [
+        "sundrug"
+      ],
+      "rate": 0.03,
+      "min_yen": 10000,
+      "valid_from": "2026-10-01",
+      "valid_to": "2027-09-30",
+      "needs_recheck": false,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_link_kind": "event",
+      "note": "중복: 다른 우대·서비스와 중복 불가. 전액 JCB 결제 필요 / 같은 쿠폰의 금액 구간(1만 3%·3만 5%·5만 7%) 중 하나만 적용 / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-drug-sundrug-t2",
+      "label": "JCB 선드럭 쿠폰 5%",
+      "country": "jp",
+      "kind": "instant",
+      "network": "jcb",
+      "stores": [
+        "sundrug"
+      ],
+      "rate": 0.05,
+      "min_yen": 30000,
+      "valid_from": "2026-10-01",
+      "valid_to": "2027-09-30",
+      "needs_recheck": false,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_link_kind": "event",
+      "note": "중복: 다른 우대·서비스와 중복 불가. 전액 JCB 결제 필요 / 같은 쿠폰의 금액 구간(1만 3%·3만 5%·5만 7%) 중 하나만 적용 / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-drug-sundrug-t3",
+      "label": "JCB 선드럭 쿠폰 7%",
+      "country": "jp",
+      "kind": "instant",
+      "network": "jcb",
+      "stores": [
+        "sundrug"
+      ],
+      "rate": 0.07,
+      "min_yen": 50000,
+      "valid_from": "2026-10-01",
+      "valid_to": "2027-09-30",
+      "needs_recheck": false,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_link_kind": "event",
+      "note": "중복: 다른 우대·서비스와 중복 불가. 전액 JCB 결제 필요 / 같은 쿠폰의 금액 구간(1만 3%·3만 5%·5만 7%) 중 하나만 적용 / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-drug-tsuruha-t1",
+      "label": "JCB 츠루하 드럭 쿠폰 3%",
+      "country": "jp",
+      "kind": "instant",
+      "network": "jcb",
+      "stores": [
+        "tsuruha"
+      ],
+      "rate": 0.03,
+      "min_yen": 10000,
+      "valid_from": "2026-10-01",
+      "valid_to": "2027-09-30",
+      "needs_recheck": false,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_link_kind": "event",
+      "note": "중복: 다른 우대·서비스와 중복 불가. 전액 JCB 결제 필요 / 같은 쿠폰의 금액 구간(1만 3%·3만 5%·5만 7%) 중 하나만 적용 / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-drug-tsuruha-t2",
+      "label": "JCB 츠루하 드럭 쿠폰 5%",
+      "country": "jp",
+      "kind": "instant",
+      "network": "jcb",
+      "stores": [
+        "tsuruha"
+      ],
+      "rate": 0.05,
+      "min_yen": 30000,
+      "valid_from": "2026-10-01",
+      "valid_to": "2027-09-30",
+      "needs_recheck": false,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_link_kind": "event",
+      "note": "중복: 다른 우대·서비스와 중복 불가. 전액 JCB 결제 필요 / 같은 쿠폰의 금액 구간(1만 3%·3만 5%·5만 7%) 중 하나만 적용 / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-drug-tsuruha-t3",
+      "label": "JCB 츠루하 드럭 쿠폰 7%",
+      "country": "jp",
+      "kind": "instant",
+      "network": "jcb",
+      "stores": [
+        "tsuruha"
+      ],
+      "rate": 0.07,
+      "min_yen": 50000,
+      "valid_from": "2026-10-01",
+      "valid_to": "2027-09-30",
+      "needs_recheck": false,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/drugstore/17008/",
+      "event_link_kind": "event",
+      "note": "중복: 다른 우대·서비스와 중복 불가. 전액 JCB 결제 필요 / 같은 쿠폰의 금액 구간(1만 3%·3만 5%·5만 7%) 중 하나만 적용 / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-yamada-5",
+      "label": "JCB 야마다전기 5% 할인",
+      "country": "jp",
+      "kind": "instant",
+      "network": "jcb",
+      "stores": [
+        "yamada"
+      ],
+      "rate": 0.05,
+      "valid_from": "2026-11-01",
+      "valid_to": "2027-03-31",
+      "needs_recheck": false,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/yamadadenki_tsunenyutai/95871/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/yamadadenki_tsunenyutai/95871/",
+      "event_link_kind": "event",
+      "note": "중복: 다른 기관 할인·프로모션과 중복 불가. 결제 후 소급 불가 / 일부 매장·상품 제외. / 신뢰도: 공식"
+    },
+    {
+      "id": "jcb-edion-joshin-5",
+      "label": "JCB 에디온·조신 5% 할인",
+      "country": "jp",
+      "kind": "instant",
+      "network": "jcb",
+      "stores": [
+        "edion",
+        "joshin"
+      ],
+      "rate": 0.05,
+      "valid_from": "2026-11-01",
+      "valid_to": "2027-03-31",
+      "needs_recheck": true,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/edion_tsunenyutai/95744/",
+      "event_url": "https://www.specialoffers.jcb/kr/campaign/detail/edion_tsunenyutai/95744/",
+      "event_link_kind": "event",
+      "note": "중복: 다른 할인과 중복 불가 / 체리픽 정리(2026-11-09)가 JCB 공식 페이지를 인용. 페이지 직접 확인 못 함. 조신: https://www.specialoffers.jcb/kr/campaign/detail/joshin_tsunenyutai/95737/ / 재확인 사유: 2차 출처 / 신뢰도: 2차"
+    },
+    {
+      "id": "mc-japan-bonus-2000-lotte",
+      "label": "롯데 마스터 일본 5만엔 이상 2,000엔 캐시백",
+      "program": "mc-japan-bonus-2000",
+      "country": "jp",
+      "kind": "cashback",
+      "card_ids": [
+        "lotte-master"
+      ],
+      "stores": "all",
+      "tiers": [
+        {
+          "min_yen": 50000,
+          "yen": 2000
+        }
+      ],
+      "uses": 1,
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "needs_recheck": false,
+      "source_url": "https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11351&evnCtgSeq=9999&bigTabGubun=2",
+      "event_url": "https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11351&evnCtgSeq=9999&bigTabGubun=2",
+      "event_link_kind": "event",
+      "note": "최소 결제는 누적 기준(기간 누계 50,000엔(카드별, 합산 불가)) / 사전 등록·응모 필요 / 중복: 마스터카드가 주는 같은 행사라 카드사가 달라도 계정당 1회 / 대상: 롯데 개인 마스터 플래티넘·티타늄·월드 등급 신용카드(선불·법인 제외) / 지급: 종료 후 30(영업)일 이내 'MA Bonus Rebate' / redemption.mastercard.com 가입·카드등록·Enroll 후 엔화 오프라인 거래만. ATM·온라인·DCC 제외. 선착순 12,000개 카드 / 신뢰도: 공식"
+    },
+    {
+      "id": "mc-japan-bonus-2000-hana",
+      "label": "하나 마스터 일본 5만엔 이상 2,000엔 캐시백",
+      "program": "mc-japan-bonus-2000",
+      "country": "jp",
+      "kind": "cashback",
+      "card_ids": [
+        "hana-travlog-master",
+        "hana-travlog-plus"
+      ],
+      "stores": "all",
+      "tiers": [
+        {
+          "min_yen": 50000,
+          "yen": 2000
+        }
+      ],
+      "uses": 1,
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "needs_recheck": false,
+      "source_url": "https://m.hanacard.co.kr/MKEVT1010M.web?EVN_SEQ=60615",
+      "event_url": "https://m.hanacard.co.kr/MKEVT1010M.web?EVN_SEQ=60615",
+      "event_link_kind": "event",
+      "note": "최소 결제는 누적 기준(기간 누계 50,000엔(카드별, 합산 불가)) / 사전 등록·응모 필요 / 중복: 마스터카드가 주는 같은 행사라 카드사가 달라도 계정당 1회 / 대상: 하나 마스터 체크카드, 플래티넘·티타늄·월드 등급 신용카드(법인·선불·하나BC 제외) / 지급: 종료 후 30(영업)일 이내 'MA Bonus Rebate' / redemption.mastercard.com 가입·카드등록·Enroll 후 엔화 오프라인 거래만. ATM·온라인·DCC 제외. 선착순 12,000개 카드 / 신뢰도: 공식"
+    },
+    {
+      "id": "kb-up-10",
+      "label": "KB 유니온페이 일본 10% 바로 할인",
+      "country": "jp",
+      "kind": "instant",
+      "card_id": "kb-unionpay",
+      "stores": "all",
+      "rate": 0.1,
+      "min_usd": 50,
+      "cap_usd": 20,
+      "uses": 3,
+      "valid_from": "2026-09-14",
+      "valid_to": "2026-12-31",
+      "needs_recheck": false,
+      "source_url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?eventNum=1002289&mainCC=a",
+      "event_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0026?mainCC=a&eventNum=1002289",
+      "event_link_kind": "event",
+      "note": "사전 등록·응모 필요 / 중복: 즉시할인 중복 시 가장 큰 할인 하나만. 다른 카드사 행사와 중복 불가 / 등록 이후 결제분만. USD 환산 기준(Frankfurter 환율로 엔 환산 필요). / 신뢰도: 공식"
+    },
+    {
+      "id": "kb-up-donki-4000",
+      "label": "KB 유니온페이 돈키호테 4만엔 이상 4,000엔 할인",
+      "country": "jp",
+      "kind": "instant",
+      "card_id": "kb-unionpay",
+      "stores": [
+        "donki"
+      ],
+      "tiers": [
+        {
+          "min_yen": 40000,
+          "yen": 4000
+        }
+      ],
+      "uses": 3,
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "needs_recheck": false,
+      "source_url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?eventNum=1002289&mainCC=a",
+      "event_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0026?mainCC=a&eventNum=1002289",
+      "event_link_kind": "event",
+      "note": "사전 등록·응모 필요 / 중복: kb-up-10과 동시 해당 시 큰 할인 하나만 / 유니온페이 공식 쿠폰 코드 260907112832(https://www.unionpayintl.com/cardholderServ/serviceCenter/merchant/121795293892?type=1). / 신뢰도: 공식"
+    },
+    {
+      "id": "kb-up-tsuruha-t1",
+      "label": "KB 유니온페이 츠루하 쿠폰 3%",
+      "country": "jp",
+      "kind": "instant",
+      "card_id": "kb-unionpay",
+      "stores": [
+        "tsuruha"
+      ],
+      "rate": 0.03,
+      "min_yen": 10000,
+      "valid_to": "2027-12-31",
+      "needs_recheck": true,
+      "source_url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?eventNum=1002289&mainCC=a",
+      "event_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0026?mainCC=a&eventNum=1002289",
+      "event_link_kind": "event",
+      "note": "KB 페이지 표기 '~2027.12.31'. JCB 츠루하 쿠폰과 같은 등급. / 같은 쿠폰의 금액 구간 중 하나만 적용 / 재확인 사유: 기간 미확인 / 신뢰도: 공식"
+    },
+    {
+      "id": "kb-up-tsuruha-t2",
+      "label": "KB 유니온페이 츠루하 쿠폰 5%",
+      "country": "jp",
+      "kind": "instant",
+      "card_id": "kb-unionpay",
+      "stores": [
+        "tsuruha"
+      ],
+      "rate": 0.05,
+      "min_yen": 30000,
+      "valid_to": "2027-12-31",
+      "needs_recheck": true,
+      "source_url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?eventNum=1002289&mainCC=a",
+      "event_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0026?mainCC=a&eventNum=1002289",
+      "event_link_kind": "event",
+      "note": "KB 페이지 표기 '~2027.12.31'. JCB 츠루하 쿠폰과 같은 등급. / 같은 쿠폰의 금액 구간 중 하나만 적용 / 재확인 사유: 기간 미확인 / 신뢰도: 공식"
+    },
+    {
+      "id": "kb-up-tsuruha-t3",
+      "label": "KB 유니온페이 츠루하 쿠폰 7%",
+      "country": "jp",
+      "kind": "instant",
+      "card_id": "kb-unionpay",
+      "stores": [
+        "tsuruha"
+      ],
+      "rate": 0.07,
+      "min_yen": 50000,
+      "valid_to": "2027-12-31",
+      "needs_recheck": true,
+      "source_url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?eventNum=1002289&mainCC=a",
+      "event_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0026?mainCC=a&eventNum=1002289",
+      "event_link_kind": "event",
+      "note": "KB 페이지 표기 '~2027.12.31'. JCB 츠루하 쿠폰과 같은 등급. / 같은 쿠폰의 금액 구간 중 하나만 적용 / 재확인 사유: 기간 미확인 / 신뢰도: 공식"
+    },
+    {
+      "id": "kb-5dept-3000-kb-travelers",
+      "label": "KB 일본 5대 백화점 월 3만엔 이상 3,000엔",
+      "country": "jp",
+      "kind": "cashback",
+      "card_id": "kb-travelers",
+      "stores": [
+        "hankyu-hanshin",
+        "mitsukoshi-isetan",
+        "takashimaya",
+        "daimaru-matsuzakaya"
+      ],
+      "tiers": [
+        {
+          "min_yen": 30000,
+          "yen": 3000
+        }
+      ],
+      "uses": 2,
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-11-30",
+      "needs_recheck": true,
+      "source_url": "https://sarc.io/forum/t/3980",
+      "event_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0022",
+      "event_link_kind": "event_list",
+      "note": "사전 등록·응모 필요 / 8/13~9/30 회차는 공식 확인(https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?eventNum=1001760&mainCC=a). 10~11월 회차는 2차 정리만. / 재확인 사유: 2차 출처, 30일 안에 종료 / 신뢰도: 2차"
+    },
+    {
+      "id": "kb-5dept-3000-kb-master",
+      "label": "KB 일본 5대 백화점 월 3만엔 이상 3,000엔",
+      "country": "jp",
+      "kind": "cashback",
+      "card_id": "kb-master",
+      "stores": [
+        "hankyu-hanshin",
+        "mitsukoshi-isetan",
+        "takashimaya",
+        "daimaru-matsuzakaya"
+      ],
+      "tiers": [
+        {
+          "min_yen": 30000,
+          "yen": 3000
+        }
+      ],
+      "uses": 2,
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-11-30",
+      "needs_recheck": true,
+      "source_url": "https://sarc.io/forum/t/3980",
+      "event_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0022",
+      "event_link_kind": "event_list",
+      "note": "사전 등록·응모 필요 / 8/13~9/30 회차는 공식 확인(https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?eventNum=1001760&mainCC=a). 10~11월 회차는 2차 정리만. / 재확인 사유: 2차 출처, 30일 안에 종료 / 신뢰도: 2차"
+    },
+    {
+      "id": "kb-5dept-3000-kb-visa",
+      "label": "KB 일본 5대 백화점 월 3만엔 이상 3,000엔",
+      "country": "jp",
+      "kind": "cashback",
+      "card_id": "kb-visa",
+      "stores": [
+        "hankyu-hanshin",
+        "mitsukoshi-isetan",
+        "takashimaya",
+        "daimaru-matsuzakaya"
+      ],
+      "tiers": [
+        {
+          "min_yen": 30000,
+          "yen": 3000
+        }
+      ],
+      "uses": 2,
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-11-30",
+      "needs_recheck": true,
+      "source_url": "https://sarc.io/forum/t/3980",
+      "event_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0022",
+      "event_link_kind": "event_list",
+      "note": "사전 등록·응모 필요 / 8/13~9/30 회차는 공식 확인(https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?eventNum=1001760&mainCC=a). 10~11월 회차는 2차 정리만. / 재확인 사유: 2차 출처, 30일 안에 종료 / 신뢰도: 2차"
+    },
+    {
+      "id": "kb-5dept-3000-kb-unionpay",
+      "label": "KB 일본 5대 백화점 월 3만엔 이상 3,000엔",
+      "country": "jp",
+      "kind": "cashback",
+      "card_id": "kb-unionpay",
+      "stores": [
+        "hankyu-hanshin",
+        "mitsukoshi-isetan",
+        "takashimaya",
+        "daimaru-matsuzakaya"
+      ],
+      "tiers": [
+        {
+          "min_yen": 30000,
+          "yen": 3000
+        }
+      ],
+      "uses": 2,
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-11-30",
+      "needs_recheck": true,
+      "source_url": "https://sarc.io/forum/t/3980",
+      "event_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0022",
+      "event_link_kind": "event_list",
+      "note": "사전 등록·응모 필요 / 8/13~9/30 회차는 공식 확인(https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?eventNum=1001760&mainCC=a). 10~11월 회차는 2차 정리만. / 재확인 사유: 2차 출처, 30일 안에 종료 / 신뢰도: 2차"
+    },
+    {
+      "id": "kb-mtr-isetan",
+      "label": "KB 트래블러스 MTR 미츠코시 이세탄 8,000엔 캐시백",
+      "country": "jp",
+      "kind": "cashback",
+      "card_id": "kb-travelers",
+      "stores": [
+        "mitsukoshi-isetan"
+      ],
+      "tiers": [
+        {
+          "min_yen": 80000,
+          "yen": 8000
+        }
+      ],
+      "uses": 1,
+      "valid_from": "2026-10-01",
+      "valid_to": "2027-09-30",
+      "needs_recheck": false,
+      "source_url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?eventNum=1000601&mainCC=a",
+      "event_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0026?mainCC=a&eventNum=1000601",
+      "event_link_kind": "event",
+      "note": "사전 등록·응모 필요 / 중복: 분기별 혜택 활성화 필요. 실물카드·현지통화·오프라인만 / 지급: 이용일로부터 최대 30일 안에 취소전표 / 분기(10~12월, 1~3월, 4~6월, 7~9월)마다 재활성화. / uses는 분기당 1회(분기마다 재활성화). 다이마루 후쿠오카 텐진은 3만엔 이상 3,000엔 / 신뢰도: 공식"
+    },
+    {
+      "id": "kb-mtr-hankyu",
+      "label": "KB 트래블러스 MTR 한큐·한신 백화점 2,000엔 캐시백",
+      "country": "jp",
+      "kind": "cashback",
+      "card_id": "kb-travelers",
+      "stores": [
+        "hankyu-hanshin"
+      ],
+      "tiers": [
+        {
+          "min_yen": 30000,
+          "yen": 2000
+        }
+      ],
+      "uses": 1,
+      "valid_from": "2026-10-01",
+      "valid_to": "2027-09-30",
+      "needs_recheck": false,
+      "source_url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?eventNum=1000601&mainCC=a",
+      "event_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0026?mainCC=a&eventNum=1000601",
+      "event_link_kind": "event",
+      "note": "사전 등록·응모 필요 / 중복: 분기별 혜택 활성화 필요. 실물카드·현지통화·오프라인만 / 지급: 이용일로부터 최대 30일 안에 취소전표 / 분기(10~12월, 1~3월, 4~6월, 7~9월)마다 재활성화. / uses는 분기당 1회(분기마다 재활성화). 다이마루 후쿠오카 텐진은 3만엔 이상 3,000엔 / 신뢰도: 공식"
+    },
+    {
+      "id": "kb-mtr-daimaru",
+      "label": "KB 트래블러스 MTR 다이마루 마쓰자카야 3,000엔 캐시백",
+      "country": "jp",
+      "kind": "cashback",
+      "card_id": "kb-travelers",
+      "stores": [
+        "daimaru-matsuzakaya"
+      ],
+      "tiers": [
+        {
+          "min_yen": 50000,
+          "yen": 3000
+        }
+      ],
+      "uses": 1,
+      "valid_from": "2026-10-01",
+      "valid_to": "2027-09-30",
+      "needs_recheck": false,
+      "source_url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?eventNum=1000601&mainCC=a",
+      "event_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0026?mainCC=a&eventNum=1000601",
+      "event_link_kind": "event",
+      "note": "사전 등록·응모 필요 / 중복: 분기별 혜택 활성화 필요. 실물카드·현지통화·오프라인만 / 지급: 이용일로부터 최대 30일 안에 취소전표 / 분기(10~12월, 1~3월, 4~6월, 7~9월)마다 재활성화. / uses는 분기당 1회(분기마다 재활성화). 다이마루 후쿠오카 텐진은 3만엔 이상 3,000엔 / 신뢰도: 공식"
+    },
+    {
+      "id": "kb-mtr-seibu-sogo",
+      "label": "KB 트래블러스 MTR 세이부·소고 3,000엔 캐시백",
+      "country": "jp",
+      "kind": "cashback",
+      "card_id": "kb-travelers",
+      "stores": [
+        "seibu-sogo"
+      ],
+      "tiers": [
+        {
+          "min_yen": 30000,
+          "yen": 3000
+        }
+      ],
+      "uses": 1,
+      "valid_from": "2026-10-01",
+      "valid_to": "2027-09-30",
+      "needs_recheck": false,
+      "source_url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?eventNum=1000601&mainCC=a",
+      "event_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0026?mainCC=a&eventNum=1000601",
+      "event_link_kind": "event",
+      "note": "사전 등록·응모 필요 / 중복: 분기별 혜택 활성화 필요. 실물카드·현지통화·오프라인만 / 지급: 이용일로부터 최대 30일 안에 취소전표 / 분기(10~12월, 1~3월, 4~6월, 7~9월)마다 재활성화. / uses는 분기당 1회(분기마다 재활성화). 다이마루 후쿠오카 텐진은 3만엔 이상 3,000엔 / 신뢰도: 공식"
+    },
+    {
+      "id": "kb-mtr-donki",
+      "label": "KB 트래블러스 MTR 돈키호테 1,000엔 캐시백",
+      "country": "jp",
+      "kind": "cashback",
+      "card_id": "kb-travelers",
+      "stores": [
+        "donki"
+      ],
+      "tiers": [
+        {
+          "min_yen": 10000,
+          "yen": 1000
+        }
+      ],
+      "uses": 1,
+      "valid_from": "2026-10-01",
+      "valid_to": "2027-09-30",
+      "needs_recheck": true,
+      "source_url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?eventNum=1000599&mainCC=a",
+      "event_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0026?mainCC=a&eventNum=1000599",
+      "event_link_kind": "event",
+      "note": "사전 등록·응모 필요 / 중복: 분기별 혜택 활성화 필요. 실물카드·현지통화·오프라인만 / 지급: 이용일로부터 최대 30일 안에 취소전표 / KB 돈키호테 미션의 Mission 3과 같은 혜택이라 중복 계산 금지. / uses는 분기당 1회(분기마다 재활성화). 다이마루 후쿠오카 텐진은 3만엔 이상 3,000엔 / 재확인 사유: 검색 요약만 확인 / 신뢰도: 공식"
+    },
+    {
+      "id": "kb-travelers-donki-m2",
+      "label": "KB 트래블러스 돈키호테 2만엔 이상 1,000엔",
+      "country": "jp",
+      "kind": "cashback",
+      "card_id": "kb-travelers",
+      "stores": [
+        "donki"
+      ],
+      "tiers": [
+        {
+          "min_yen": 20000,
+          "yen": 1000
+        }
+      ],
+      "uses": 1,
+      "valid_from": "2026-09-01",
+      "valid_to": "2026-12-31",
+      "needs_recheck": false,
+      "source_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0026?evntSerno=1001842",
+      "event_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0026?mainCC=a&eventNum=1001842",
+      "event_link_kind": "event",
+      "note": "사전 등록·응모 필요 / 중복: Mission 1과 합산 가능(같은 행사 설계), Mission 3은 kb-mtr-donki / 지급: 이용 다음 달 말일 안에 외화머니 / Mission 2. / 월 1회(uses는 월별 초기화 필요) / 신뢰도: 공식"
+    },
+    {
+      "id": "kb-master-donki-m1",
+      "label": "KB 마스터 돈키호테 2만엔 이상 2,000엔",
+      "country": "jp",
+      "kind": "cashback",
+      "card_id": "kb-master",
+      "stores": [
+        "donki"
+      ],
+      "tiers": [
+        {
+          "min_yen": 20000,
+          "yen": 2000
+        }
+      ],
+      "uses": 1,
+      "valid_from": "2026-09-01",
+      "valid_to": "2026-12-31",
+      "needs_recheck": false,
+      "source_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0026?evntSerno=1001842",
+      "event_url": "https://m.kbcard.com/BON/DVIEW/MBBMCXHIABNC0026?mainCC=a&eventNum=1001842",
+      "event_link_kind": "event",
+      "note": "사전 등록·응모 필요 / 지급: 이용 다음 달 말일 안에 외화머니 / Mission 1. 응모 필수(응모·이용 순서 무관, 응모 전월 실적 제외). / 월 1회(uses는 월별 초기화 필요). 트래블러스도 KB 마스터라 대상 / 신뢰도: 공식"
+    },
+    {
+      "id": "shinhan-haru-donki-1000",
+      "label": "신한 Haru 돈키호테 2만엔 이상 1,000엔",
+      "country": "jp",
+      "kind": "cashback",
+      "card_id": "shinhan-haru",
+      "stores": [
+        "donki"
+      ],
+      "tiers": [
+        {
+          "min_yen": 20000,
+          "yen": 1000
+        }
+      ],
+      "valid_from": "2026-04-01",
+      "valid_to": "2027-03-31",
+      "needs_recheck": false,
+      "source_url": "https://www.specialoffers.jcb/kr/campaign/detail/krpremium/93243/",
+      "event_url": "https://www.shinhancard.com/pconts/html/benefit/event/1238572_2239.html",
+      "event_link_kind": "event",
+      "note": "사전 등록·응모 필요 / 중복: JCBig 20%와 별도 행사 / 신한은 이벤트 페이지 응모 필수(https://www.shinhancard.com/pconts/html/benefit/event/1238572_2239.html). 월 예산 소진 시 조기 종료, 다음 달 재개. 11월분 2026-11-30, 12월분 2026-12-31 종료 예정. / JCB 프리미엄 등급 혜택. 월별 진행, 횟수 규정 미표기 / 신뢰도: 공식"
+    },
+    {
+      "id": "shinhan-haru-restaurant-10",
+      "label": "신한 Haru JCB 선정 음식점 10% 캐시백",
+      "country": "jp",
+      "kind": "cashback",
+      "card_id": "shinhan-haru",
+      "stores": [
+        "food"
+      ],
+      "rate": 0.1,
+      "cap_yen": 500,
+      "valid_from": "2026-11-01",
+      "valid_to": "2027-03-31",
+      "needs_recheck": true,
+      "source_url": "https://www.shinhancard.com/pconts/html/benefit/event/1238572_2239.html",
+      "event_url": "https://www.shinhancard.com/pconts/html/benefit/event/1238572_2239.html",
+      "event_link_kind": "event",
+      "note": "사전 등록·응모 필요 / 신한 페이지: '26년 11월 부터 OPEN, 최대 500엔'. / JCB 선정 음식점만 대상, 일반 음식점에 자동 적용하면 과대 계산 / 재확인 사유: 대상 음식점 목록 미확인 / 신뢰도: 공식"
+    },
+    {
+      "id": "samsung-visa-dine-10",
+      "label": "삼성 Visa 일본 레스토랑 10% 바로 할인",
+      "country": "jp",
+      "kind": "instant",
+      "card_id": "samsung-visa",
+      "stores": [
+        "food"
+      ],
+      "rate": 0.1,
+      "valid_from": "2026-04-08",
+      "valid_to": "2026-12-31",
+      "needs_recheck": true,
+      "source_url": "https://www.getggulggeok.com/event/3750417",
+      "event_url": "https://www.samsungcard.com/personal/event/ing/UHPPBE1401M0.jsp",
+      "event_link_kind": "event_list",
+      "note": "사전 등록·응모 필요 / 중복: 다른 이벤트·쿠폰과 중복 불가 / Dine with Visa 사전예약 레스토랑만 대상 / 재확인 사유: 2차 출처 / 신뢰도: 2차"
+    }
+  ]
+}
